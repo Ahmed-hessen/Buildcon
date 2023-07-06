@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+body {
+    background-color: #f1fbff;
+}
+ /* Nav Bar  */
+.navbar a.nav-link {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.navbar a.nav-link:hover {
+    color: green;
+}
+.navbar-toggler:focus{
+    outline: none;
+    border: none;
+}
+.navbar-toggler{
+    color:green ;
+}
+
+ /* the Carousel  */
+.carousel-item {
+    height: calc(100vh - 65px);
+    text-align: center;
+}
+.carousel-caption {
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-30%);
+    z-index: 2;
+}
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.carousel-caption p {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.carousel-inner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+@media only screen and ( max-width:768px){
+    .carousel-caption h5 {
+        font-size: 20px;
+        width: 100%;
+    }
+    .carousel-caption p {
+        font-size: 14px;
+        width: 100%;
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    } 
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+}
+ /* About section  */
+.row .text{
+    margin-top: 100px;
+}
+.row .text h3{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2;
+}
+.row .text p {
+    line-height: 2;
+    letter-spacing: 1;
+}
+/* Service Section  */
+.row svg {
+    font-size: 36px;
+    margin: 10px 0 ;
+}
+
+/* Our Team  */
+.our-team img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+.our-team svg {
+    font-size: 18px;
+}
+
+/* Contact Us  */
+.contact input {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid orange;
+}
+.contact textarea {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid orange;
+}
+
